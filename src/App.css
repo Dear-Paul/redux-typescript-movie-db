@@ -1,38 +1,122 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  flex-wrap: wrap;
+  background-color: #000;
+  margin-top: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  
+  position: relative;
+  padding: 10px;
+  width: 426px;
+  background-color: rgba(0, 0, 0, 0.692);
+  height: 500px;
+ 
+  margin: 10px 10px 10px 10px;
+  border-radius: 34px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+ 
+  height: 200px;
+  width: 150px;
+  border-radius: 15px;
+  
+  margin-left: 20px;
 }
+
+h4 {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.nav {
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 70px;
+  background-color: rgb(105, 54, 114);
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  gap: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav h2 {
+  padding-left: 5rem;
+  color: rgb(2, 2, 2);
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.input {
+
+  border-radius: 15px;
+  background-color: rgb(122, 162, 202);
+  color: hsl(295, 17%, 15%);
+  border: none;
+  margin-left: 5rem;
+ 
+  margin-top: 20px;
+  
+  height: 30px;
+}
+
+.overview {
+  
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  background-color: #000;
+  width: 301px;
+  left: 82px;
+  transition: transform 0.4s ease-in 0s;
+  font-size: 0.9rem;
+ 
+}
+
+.card .overview {
+  transform: translateX(0);
+}
+
+.heart {
+  position: absolute;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  margin-top: 9px;
+  color: rgb(248, 247, 247);
+  margin-left: 16.5rem;
+  background-color: rgb(131, 54, 146);
+}
+
+.active {
+  position: absolute;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  margin-top: 9px;
+  color: rgb(231, 29, 29);
+  margin-left: 16.5rem;
+  background-color: rgb(218, 187, 221);
+
+}
+
+.active:hover {
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
